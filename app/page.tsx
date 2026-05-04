@@ -49,7 +49,7 @@ export default function Home() {
           {/* Badge */}
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-blue-500/30 bg-blue-500/10 text-blue-400 text-xs mb-8">
             <span className="w-1.5 h-1.5 rounded-full bg-blue-400 animate-pulse" />
-            Now on npm — npx docsync init
+            Now on npm — npx @ishwarrr/docsync init
           </div>
 
           {/* Headline */}
@@ -69,7 +69,7 @@ export default function Home() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <div className="flex items-center gap-3 bg-white/5 border border-white/10 rounded-lg px-5 py-3 font-mono text-sm">
               <span className="text-white/40">$</span>
-              <span>npx docsync init</span>
+              <span>npx @ishwarrr/docsync init</span>
               <button
                 className="text-white/40 hover:text-white transition-colors text-xs"
                 title="Copy to clipboard"
@@ -222,7 +222,7 @@ Next Steps
             {[
               {
                 title: 'CLI — Run anywhere',
-                code: 'npx docsync init',
+                code: 'npx @ishwarrr/docsync init',
                 desc: 'No global install needed. Works on any repo.',
               },
               {
@@ -301,7 +301,7 @@ Next Steps
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <div className="flex items-center gap-3 bg-white/5 border border-white/10 rounded-lg px-5 py-3 font-mono text-sm">
             <span className="text-white/40">$</span>
-            <span>npx docsync init</span>
+            <span>npx @ishwarrr/docsync init</span>
           </div>
           
            <a href="https://github.com/ishwar-prog/docsync"
