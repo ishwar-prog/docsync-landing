@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { GLSLHills } from "@/components/ui/glsl-hills";
 
 export const metadata: Metadata = {
   title: 'DocSync — Docs That Stay True to Your Code',
@@ -17,9 +18,11 @@ export const metadata: Metadata = {
   },
 }
 
+import DemoOne from "@/components/demo";
+
 export default function Home() {
   return (
-    <main className="min-h-screen bg-[#0a0a0a] text-white font-mono">
+    <main className="min-h-screen bg-transparent text-white font-mono">
 
       {/* Navigation */}
       <nav className="fixed top-0 w-full z-50 border-b border-white/10 bg-[#0a0a0a]/80 backdrop-blur-sm">
