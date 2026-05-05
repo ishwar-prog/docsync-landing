@@ -459,7 +459,6 @@
 import type { Metadata } from 'next'
 import { CopyCommandButton } from '@/components/copy-button'
 import { GLSLHills } from "@/components/ui/glsl-hills";
-import { MobileNav } from "@/components/mobile-nav";
 
 export const metadata: Metadata = {
   title: 'DocSync — Docs That Stay True to Your Code',
@@ -489,43 +488,37 @@ export default function Home() {
       {/* ── Navigation ──────────────────────────────────────────────── */}
       <nav className="fixed top-0 w-full z-50 border-b border-white/10 bg-[#0a0a0a]/80 backdrop-blur-sm">
         <div className="max-w-6xl mx-auto px-6 h-14 flex items-center justify-between">
-          <div className="flex items-center gap-4">
-            <span className="text-white font-bold tracking-tight">
-              doc<span className="text-blue-400">sync</span>
-            </span>
-          </div>
-          
-          <div className="flex items-center gap-6">
-            <div className="hidden md:flex items-center gap-6 text-sm text-white/60">
-              <a href="#how-it-works" className="hover:text-white transition-colors">
-                How It Works
-              </a>
-              <a href="#install" className="hover:text-white transition-colors">
-                Install
-              </a>
-              <a href="#comparison" className="hover:text-white transition-colors">
-                Compare
-              </a>
-              <a
-                href="https://www.npmjs.com/package/@ishwarrr/docsync"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="px-3 py-1.5 bg-blue-500/20 border border-blue-500/30 text-blue-400 rounded-md text-xs hover:bg-blue-500/30 transition-colors"
-              >
-                v0.1.0 on npm
-              </a>
-            </div>
-
+          <span className="text-white font-bold tracking-tight">
+            doc<span className="text-blue-400">sync</span>
+          </span>
+          <div className="flex items-center gap-6 text-sm text-white/60">
+            <a href="#how-it-works" className="hover:text-white transition-colors">
+              How It Works
+            </a>
+            <a href="#install" className="hover:text-white transition-colors">
+              Install
+            </a>
+            <a href="#comparison" className="hover:text-white transition-colors">
+              Compare
+            </a>
+            
             <a
               href="https://github.com/ishwar-prog/docsync"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-1.5 text-white hover:text-blue-400 transition-colors text-sm"
+              className="flex items-center gap-1.5 text-white hover:text-blue-400 transition-colors"
             >
               GitHub ↗
             </a>
-
-            <MobileNav />
+            
+            <a
+              href="https://www.npmjs.com/package/@ishwarrr/docsync"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-3 py-1.5 bg-blue-500/20 border border-blue-500/30 text-blue-400 rounded-md text-xs hover:bg-blue-500/30 transition-colors"
+            >
+              v0.1.0 on npm
+            </a>
           </div>
         </div>
       </nav>
